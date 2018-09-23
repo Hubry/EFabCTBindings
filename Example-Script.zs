@@ -1,12 +1,17 @@
 import mods.efabct.EFabRecipe;
 
-//	public static EFabRecipe shaped(IItemStack output, IIngredient[][] ingredients)
-//	public static EFabRecipe shapeless(IItemStack output, IIngredient[][] ingredients)
-//	public EFabRecipe fluid(ILiquidStack stack)
-//	public EFabRecipe rfPerTick(int rf)
-//	public EFabRecipe manaPerTick(int mana)
-//	public EFabRecipe time(int t)
-//	public EFabRecipe tier(String name)
+//  public static EFabRecipe shaped(IItemStack output, IIngredient[][] ingredients)
+//  public static EFabRecipe shapeless(IItemStack output, IIngredient[][] ingredients)
+//  public EFabRecipe fluid(ILiquidStack stack)
+//  public EFabRecipe rfPerTick(int rf)
+//  public EFabRecipe manaPerTick(int mana)
+//  public EFabRecipe time(int t)
+//  public EFabRecipe tier(String name)
+
+// Tier names:
+// STEAM, GEARBOX, ADVANCED_GEARBOX, RF,
+// LIQUID, MANA, COMPUTING, UPGRADE_ARMORY,
+// UPGRADE_MAGIC, UPGRADE_POWER, UPGRADE_DIGITAL
 
 // Some very dumb recipes done for testing.
 

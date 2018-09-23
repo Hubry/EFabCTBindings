@@ -155,6 +155,4 @@ public class EFabRecipe {
 			return "Adding EFab recipe for " + output.getItem().getRegistryName() + ":" + output.getMetadata();
 		}
 	}
-
-
 }
