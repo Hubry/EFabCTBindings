@@ -64,8 +64,16 @@ public class EFabRecipe {
 	}
 
 	@ZenMethod
-	public static EFabRecipe shapeless(IItemStack output, IIngredient[][] ingredients) {
-		IEFabRecipe recipe = new EFabShapelessRecipe(CraftTweakerMC.getItemStack(output), mapIngredients(ingredients));
+	public static EFabRecipe shapeless(IItemStack output, IIngredient[] ingredients) {
+		IIngredient[][] inputs = new IIngredient[3][3]; //too lazy to make this logic separate
+		for(int i = 0; i < ingredients.length; i++) {
+			if(i == 9) {
+				CraftTweakerAPI.logWarning("Recipe length for stack "+ output + " exceeded maximum length!");
+				break;
+			}
+			inputs[i / 3][i % 3] = ingredients[i];
+		}
+		IEFabRecipe recipe = new EFabShapelessRecipe(CraftTweakerMC.getItemStack(output), mapIngredients(inputs));
 		EFabCTBindings.addRecipe(new AddRecipe(recipe));
 		return new EFabRecipe(recipe);
 	}

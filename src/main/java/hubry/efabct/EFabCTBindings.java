@@ -42,7 +42,7 @@ public class EFabCTBindings {
 
 	public static final String MOD_ID = "efabctbindings";
 	public static final String MOD_NAME = "EFab CT Bindings";
-	public static final String VERSION = "0.1";
+	public static final String VERSION = "0.2";
 	public static final String DEPENDENCIES = "required-after:efab;required-after:crafttweaker;";
 
 	public static final Logger LOGGER = LogManager.getLogger(MOD_ID);

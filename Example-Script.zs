@@ -1,7 +1,7 @@
 import mods.efabct.EFabRecipe;
 
 //  public static EFabRecipe shaped(IItemStack output, IIngredient[][] ingredients)
-//  public static EFabRecipe shapeless(IItemStack output, IIngredient[][] ingredients)
+//  public static EFabRecipe shapeless(IItemStack output, IIngredient[] ingredients)
 //  public EFabRecipe fluid(ILiquidStack stack)
 //  public EFabRecipe rfPerTick(int rf)
 //  public EFabRecipe manaPerTick(int mana)
@@ -34,7 +34,11 @@ EFabRecipe.shaped(<minecraft:grass>, [[<ore:ingotIron>, <ore:ingotIron>, <ore:in
     .rfPerTick(10);
     
     
-EFabRecipe.shapeless(<minecraft:iron_pickaxe>, [[<ore:ingotIron>], [<ore:ingotGold>], [<minecraft:stick>]])
+EFabRecipe.shapeless(<minecraft:iron_pickaxe>, [<ore:ingotIron>, <ore:ingotGold>, <minecraft:stick>])
+    .time(250);
+    
+EFabRecipe.shapeless(<minecraft:iron_axe>, [<ore:ingotIron>, <ore:ingotGold>, <minecraft:stick>, <minecraft:stick>, 
+<minecraft:stick>, <minecraft:stick>, <minecraft:stick>, <minecraft:stick>, <minecraft:stick>])
     .time(250);
     
 EFabRecipe.shaped(<minecraft:stone_pickaxe>, [[<ore:gemDiamond>], [<ore:ingotGold>], [<minecraft:stick>]])
