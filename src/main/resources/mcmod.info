@@ -1,0 +1,21 @@
+[
+  {
+    "modid": "efabctbindings",
+    "name": "EFab CT Bindings",
+    "description": "Adds CraftTweaker bindings for EFab",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "Hubry"
+    ],
+    "credits": "McJty for not using ZS, Vyraal1 for complaining about it really loudly",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": [
+      "crafttweaker",
+      "efab"
+    ]
+  }
+]
